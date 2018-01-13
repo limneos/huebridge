@@ -1,3 +1,16 @@
+//
+//  
+//  huebridge
+//
+//  Command line tool to control Philips Hue bridge and lights
+//
+//  Created by Elias Limneos on Jan 13 2018.
+//  Copyright © 2018 Elias Limneos. All rights reserved.
+//
+//  This software is free, licensed under MIT License
+//  Check LICENSE.txt for more info.
+//
+
 #include <stdlib.h>  
 #include <arpa/inet.h>
 #include <sys/socket.h> 
@@ -110,11 +123,8 @@ const char * discoverHueIp(){
 
 
 @implementation Connection {
-
 	NSMutableDictionary* lightInfo;
-	
 }
-
 -(id)init{
 	
 	if (self=[super init]){
